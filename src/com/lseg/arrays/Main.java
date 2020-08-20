@@ -9,7 +9,6 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter the n and d:");
             int n = scanner.nextInt(); // n este nr de int din array
-            //System.out.println("Enter the d:");
             int d = scanner.nextInt(); // d este nr de rotatii
             int[] array = new int[n]; //  este array-ul
 
@@ -26,7 +25,7 @@ public class Main {
                 }
                 array[j] = first;
             }
-            for(int i = 0; i < n; i++) { //printam arrayl dupa rotatie
+            for(int i = 0; i < n; i++) { //printam arrayul dupa rotatie
                 System.out.print(array[i] + " ");
             }
         }
