@@ -13,18 +13,10 @@ public class Main {
             int d = scanner.nextInt(); // d este nr de rotatii
             int[] array = new int[n]; //  este array-ul
 
-            System.out.println("Enter the array:");
+            System.out.println("Give the array:");
             for (int i = 0; i < n; i++) {
             array[i] = scanner.nextInt();
             }
-
-            System.out.println("Original array:");
-            for(int i = 0; i < n; i++) {
-                System.out.print(array[i] + " ");
-            }
-
-            System.out.println();
-            System.out.println("n = " + array.length + " d = " + d);
 
             for (int i = 0; i < d; i++) {
                 int j, first;
