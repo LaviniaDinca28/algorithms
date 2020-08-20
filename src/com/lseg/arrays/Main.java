@@ -9,15 +9,33 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter the n and d:");
             int n = scanner.nextInt(); // n este nr de int din array
+            //System.out.println("Enter the d:");
             int d = scanner.nextInt(); // d este nr de rotatii
-            System.out.println("Enter the array:");
             int[] array = new int[n]; //  este array-ul
 
+            System.out.println("Enter the array:");
             for (int i = 0; i < n; i++) {
-                array[(i + n - d) % n] = scanner.nextInt();
+            array[i] = scanner.nextInt();
+            }
+
+            System.out.println("Original array:");
+            for(int i = 0; i < n; i++) {
+                System.out.print(array[i] + " ");
+            }
+
+            System.out.println();
+            System.out.println("n = " + array.length + " d = " + d);
+
+            for (int i = 0; i < d; i++) {
+                int j, first;
+                first = array[0];
+                for (j=0; j < array.length - 1; j++){
+                    array[j] = array[j+1];
+                }
+                array[j] = first;
             }
             for(int i = 0; i < n; i++) {
-                System.out.print(i + " ");
+                System.out.print(array[i] + " ");
             }
         }
 }
