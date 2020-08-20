@@ -13,12 +13,12 @@ public class Main {
             int d = scanner.nextInt(); // d este nr de rotatii
             int[] array = new int[n]; //  este array-ul
 
-            System.out.println("Give the array:");
+            System.out.println("Give the array:"); //introducem arrayul original
             for (int i = 0; i < n; i++) {
             array[i] = scanner.nextInt();
             }
 
-            for (int i = 0; i < d; i++) {
+            for (int i = 0; i < d; i++) { //facem rotatia
                 int j, first;
                 first = array[0];
                 for (j=0; j < array.length - 1; j++){
@@ -26,7 +26,7 @@ public class Main {
                 }
                 array[j] = first;
             }
-            for(int i = 0; i < n; i++) {
+            for(int i = 0; i < n; i++) { //printam arrayl dupa rotatie
                 System.out.print(array[i] + " ");
             }
         }
