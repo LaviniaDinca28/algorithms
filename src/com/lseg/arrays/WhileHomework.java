@@ -37,8 +37,25 @@ public class WhileHomework {
         }
         System.out.println("Numarul total de incercari este: " + counts);
 
+    //Ex3. Scrieţi un program care să facă suma unor numere întregi introduse de la tastatură. Suma va fi
+        //afişată la fiecare pas. Programul se va opri când se va introduce valoarea 0.
+        Scanner scan = new Scanner(System.in);
+        int sum = 0;
 
+        while(true) {
+            System.out.println("Introduceti numarul: ");
+            int numar = Integer.valueOf(scan.nextLine());
 
+            if(numar==0){
+                break;
+            }
+            if(numar!=0){
+                sum = sum + numar;
+            }
+
+        }
+
+        System.out.println("Suma numerelor este: " + sum);
 
 
     }
