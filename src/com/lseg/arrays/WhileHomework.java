@@ -57,6 +57,35 @@ public class WhileHomework {
 
         System.out.println("Suma numerelor este: " + sum);
 
+        //Ex4. Scrieţi un program care să verifice dacă 3 numere introduse de la tastatură pot fi laturile unui
+        //triunghi.
+
+        while(true){
+            System.out.println("Introduceti a: ");
+            int a = Integer.valueOf(scan.nextLine());
+            System.out.println("Introduceti b: ");
+            int b = Integer.valueOf(scan.nextLine());
+            System.out.println("Introduceti c: ");
+            int c = Integer.valueOf(scan.nextLine());
+
+           if((a>0) & (b>0) & (c>0) & ( (a+b>c) & (a+c>b) & (b+c>a) )){
+               System.out.println("Cele 3 numere pot fi laturile unui triunghi");
+               continue;
+            } else {
+               System.out.println("Cele 3 numere nu pot fi laturile unui triunghi");
+               break;
+           }
+        }
+
+        //Ex5 - Introduceţi un număr întreg de la tastatură. Verificaţi dacă este palindrom. Un număr este
+        //palindrom dacă este egal cu opusul său.
+
+        while(true){
+            System.out.println("Introduceti un nr: ");
+            int palindrom = Integer.valueOf(scan.nextLine());
+
+            if(palindrom )
+        }
 
     }
 }
