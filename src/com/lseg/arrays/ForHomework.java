@@ -91,15 +91,18 @@ public class ForHomework {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give the number:");
         int n = scanner.nextInt(); //given number by user
-        int[] array7 = new int[((n - 1)/2)];
-        int index = 0;
+        int[] array7 = new int[n];
 
-         for (int i = 1; i < n; i++) { //
-             if () {
-                 array7[index] = i;
-                 index++;
+         for (int i = 2; i < n; i++) {
+             for(int j = 2; j<=i; j++){
+                 if(j==i){
+                     System.out.print(i);
              }
-             System.out.print(array7[index] + "\t");
+                 if(i%j == 0){
+                     break;
+                 }
+             }
+             System.out.print(array7[i]);
          }
 
         System.out.println("");
