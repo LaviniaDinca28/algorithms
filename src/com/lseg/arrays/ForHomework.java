@@ -90,26 +90,30 @@ public class ForHomework {
         //functie, mai mici decat un numar dat n, natural.
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give the number:");
-        int n = scanner.nextInt(); //acesta este nr dat
-        int m = 0; //no of values in the array
-        int[] array7 = new int[m];
+        int n = scanner.nextInt(); //given number by user
+        int[] array7 = new int[((n - 1)/2)];
+        int index = 0;
 
-      //  for (int i = 0; i < n; i++) {
-           //** if (i % 2 == 0) {
-            //    array7[i] = scanner.nextInt();;
-           // }
-           // System.out.print(array7[i] + "\t");
-       //}
+         for (int i = 1; i < n; i++) { //
+             if () {
+                 array7[index] = i;
+                 index++;
+             }
+             System.out.print(array7[index] + "\t");
+         }
 
         System.out.println("");
 
         //Ex8 -Scrieți o functie care sa sorteze un array de numere intregi.
         //Scanner scan = new Scanner(System.in);
         //System.out.println("Give the array:");
+        //int n = scanner.nextInt();
 
         int[] array8 = {3,0,4,6,8,1,};
         Arrays.sort(array8);
         System.out.println("Ordered array list is:" + Arrays.toString(array8));
 
     }
+
+
 }
