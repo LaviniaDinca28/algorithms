@@ -91,18 +91,24 @@ public class ForHomework {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give the number:");
         int n = scanner.nextInt(); //given number by user
-        int[] array7 = new int[n];
+        int count = 0;
+        int[] tempArray = new int[20];
 
          for (int i = 2; i < n; i++) {
              for(int j = 2; j<=i; j++){
                  if(j==i){
-                     System.out.print(i);
+                tempArray[count] =i;
+                 count++;
              }
                  if(i%j == 0){
                      break;
                  }
              }
-             System.out.print(array7[i]);
+         }
+        int[] array7 = new int[count];
+         for(int i = 0; i<count ;i++){
+             array7 = tempArray;
+             System.out.println(array[i] + "\t");
          }
 
         System.out.println("");
@@ -112,7 +118,7 @@ public class ForHomework {
         //System.out.println("Give the array:");
         //int n = scanner.nextInt();
 
-        int[] array8 = {3,0,4,6,8,1,};
+        int[] array8 = {3,0,4,6,8,1};
         Arrays.sort(array8);
         System.out.println("Ordered array list is:" + Arrays.toString(array8));
 

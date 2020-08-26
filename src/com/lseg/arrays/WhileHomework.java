@@ -86,7 +86,7 @@ public class WhileHomework {
         int remainder = 0;
 
         while(palindrom != 0){
-            remainder = palindrom %10;
+            remainder = palindrom % 10;
             reversednumber = reversednumber * 10 + remainder;
             palindrom = palindrom / 10;
                 }

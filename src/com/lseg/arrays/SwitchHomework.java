@@ -14,6 +14,9 @@ public class SwitchHomework {
         int day = Integer.valueOf(scanner.nextLine());
 
         switch(day){
+            case 0:
+                System.out.println("Monday");
+                break;
             case 1:
                 System.out.println("Monday");
                 break;
@@ -31,9 +34,6 @@ public class SwitchHomework {
                 break;
             case 6:
                 System.out.println("Saturday");
-                break;
-            case 7:
-                System.out.println("Sunday");
                 break;
 
         }
