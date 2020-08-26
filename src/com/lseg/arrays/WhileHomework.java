@@ -79,13 +79,53 @@ public class WhileHomework {
 
         //Ex5 - Introduceţi un număr întreg de la tastatură. Verificaţi dacă este palindrom. Un număr este
         //palindrom dacă este egal cu opusul său.
+        System.out.println("Introduceti un nr: ");
+        int palindrom = Integer.valueOf(scan.nextLine());
+        int originalnumber = palindrom;
+        int reversednumber = 0;
+        int remainder = 0;
 
-        while(true){
-            System.out.println("Introduceti un nr: ");
-            int palindrom = Integer.valueOf(scan.nextLine());
-
-            if(palindrom )
+        while(palindrom != 0){
+            remainder = palindrom %10;
+            reversednumber = reversednumber * 10 + remainder;
+            palindrom = palindrom / 10;
+                }
+        if(originalnumber == reversednumber){
+            System.out.println("Numarul este palindrom");
+        } else{
+            System.out.println("Numarul nu este palindrom");
         }
+
+        System.out.println("");
+
+        //Ex6 - Scrieți un program în care voi vă gândiți la un număr între 1 și 100, iar computerul trebuie să îl
+        //ghicească.
+
+
+
+        //Ex7 - Scrieți o functie care simuleaza un bancomat. Se verifica pinul. Daca userul introduce greșit
+        //pinul de 3 ori, se iese din bucla while.
+
+        Scanner sc = new Scanner(System.in);
+        int pincorect = 1234;
+        int count = 1;
+
+        while(count <= 3){
+            System.out.println("Introduceti codul pin:");
+            int pin = Integer.valueOf(sc.nextLine());
+
+            if(pin == pincorect){
+                System.out.println("Pinul este corect");
+                break;
+            }
+            if(pin != pincorect) {
+                System.out.println("Codul pin este gresit");
+                count++;
+                continue;
+            }
+        }
+        System.out.println("Contul este blocat");
+
 
     }
 }
