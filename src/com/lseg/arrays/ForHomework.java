@@ -92,7 +92,7 @@ public class ForHomework {
         System.out.println("Give the number:");
         int n = scanner.nextInt(); //given number by user
         int count = 0;
-        int[] tempArray = new int[20];
+        int[] tempArray = new int[n];
 
          for (int i = 2; i < n; i++) {
              for(int j = 2; j<=i; j++){
@@ -107,8 +107,8 @@ public class ForHomework {
          }
         int[] array7 = new int[count];
          for(int i = 0; i<count ;i++){
-             array7 = tempArray;
-             System.out.println(array[i] + "\t");
+             array7[i] = tempArray[i];
+             System.out.print(array7[i] + "\t");
          }
 
         System.out.println("");
