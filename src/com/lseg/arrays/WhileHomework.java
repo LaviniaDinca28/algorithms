@@ -70,7 +70,7 @@ public class WhileHomework {
 
            if((a>0) & (b>0) & (c>0) & ( (a+b>c) & (a+c>b) & (b+c>a) )){
                System.out.println("Cele 3 numere pot fi laturile unui triunghi");
-               continue;
+               break;
             } else {
                System.out.println("Cele 3 numere nu pot fi laturile unui triunghi");
                break;
@@ -100,19 +100,50 @@ public class WhileHomework {
 
         //Ex6 - Scrieți un program în care voi vă gândiți la un număr între 1 și 100, iar computerul trebuie să îl
         //ghicească.
+        //Scanner scann = new Scanner(System.in);
+        System.out.println("Ganditi-va la un nr si apasati enter pentru a incepe!");
+        scanner.nextLine();
+        int min = 0;
+        int max = 100;
+        boolean done = false;
 
+        while(!done){
 
+            int guess = min + (int)(Math.random() * (max - min + 1));
+
+            System.out.println("My guess is: " + guess);
+            System.out.println("Please type yes if I got it right.");
+            System.out.println("Please type higher if your number is greater than " + guess + ".");
+            System.out.println("Please type lower if your number is less than " + guess + ".");
+            System.out.println("Then press enter.");
+
+            String answer = scanner.nextLine();
+
+            if(answer.equals("lower")){
+                max = guess - 1;
+            }
+            else if(answer.equals("higher")){
+                min = guess + 1;
+            }
+            else{
+                System.out.println("Yeii!");
+                done = true;
+            }
+        }
+        //scanner.close();
+
+        System.out.println("");
 
         //Ex7 - Scrieți o functie care simuleaza un bancomat. Se verifica pinul. Daca userul introduce greșit
         //pinul de 3 ori, se iese din bucla while.
 
-        Scanner sc = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
         int pincorect = 1234;
         int count = 1;
 
         while(count <= 3){
             System.out.println("Introduceti codul pin:");
-            int pin = Integer.valueOf(sc.nextLine());
+            int pin = Integer.valueOf(scanner.nextLine());
 
             if(pin == pincorect){
                 System.out.println("Pinul este corect");
@@ -124,8 +155,6 @@ public class WhileHomework {
                 continue;
             }
         }
-        System.out.println("Contul este blocat");
-
 
     }
 }
