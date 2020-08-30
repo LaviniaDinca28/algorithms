@@ -13,10 +13,6 @@ public class IfHomework {
         System.out.print("Give the distance in miles:");
         //double milesPerHour = Double.valueOf(s.nextLine());
         double milesPerHour = s.nextDouble();
-
-
-       // System.out.print("Distance in km:");
-        //double kmPerHour = Double.valueOf(s.nextLine());
         double kmPerHour = 0;
 
         System.out.println(milesPerHour + " miles = " + convertToKilometersPerHour(milesPerHour) + " km");
