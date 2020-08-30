@@ -2,7 +2,7 @@ package com.lseg.Homework3;
 
 import java.util.Scanner;
 
-public class IfHomework {
+public class Ex1 {
     public static void main(String[] args) {
 
         //1.  Write a function called convertToKilometersPerHour(double milesPerHour) that would return the
@@ -11,7 +11,6 @@ public class IfHomework {
 
         Scanner s = new Scanner(System.in);
         System.out.print("Give the distance in miles:");
-        //double milesPerHour = Double.valueOf(s.nextLine());
         double milesPerHour = s.nextDouble();
         double kmPerHour = 0;
 
