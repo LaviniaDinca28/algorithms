@@ -10,7 +10,6 @@ public class Ex2 {
 
     }
 
-
     private static boolean shouldWakeUp(boolean barking, int hour){
             boolean result = false;
             if (hour < 0 || hour > 23){
