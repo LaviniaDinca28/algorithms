@@ -4,7 +4,7 @@ public class Ex4 {
     public static void main(String[] args) {
 
 
-        System.out.println(isCatPlaying(true, 35));
+        System.out.println(isCatPlaying(true, 26));
     }
 
     private static boolean isCatPlaying(boolean summer, int temperature){

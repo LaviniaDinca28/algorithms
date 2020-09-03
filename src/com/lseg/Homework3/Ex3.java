@@ -5,19 +5,24 @@ import java.util.Scanner;
 public class Ex3 {
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
+        System.out.println(year(2021));
+    }
 
-        System.out.println("Give a year:");
-        int year = scan.nextInt();
-
+    private static boolean year(int year){
+        boolean result = false;
         if (year % 4 != 0) {
             System.out.println("The year is not a leap year.");
+            result = false;
         } else if (year % 400 == 0) {
             System.out.println("The year is a leap year.");
+            result = true;
         } else if (year % 100 == 0){
             System.out.println("The year is not a leap year.");
+            result = false;
         } else {
             System.out.println("The year is a leap year");
+            result = true;
         }
+        return result;
     }
 }
