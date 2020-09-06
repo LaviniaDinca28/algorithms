@@ -3,7 +3,7 @@ package com.lseg.Homework4;
 public class Ex1 {
     public static void main(String[] args) {
 
-        System.out.println(rangeSum(2,50,2));
+        System.out.println(rangeSum(2,5,2));
         //System.out.println(isDivisible(0,10));
 
     }
@@ -25,9 +25,11 @@ public class Ex1 {
     static int rangeSum(int start, int end, int divisor){
         int sum = 0;
         if(start !=0 && end !=0){
-            if(start < end) {
-                if (isDivisible(58, 2) == true) {
-                   // sum = sum + number;
+            if(start <= end) {
+                for (int number = start; number <= end; number++) {
+                    if (isDivisible(number, divisor)) {
+                        sum = sum + number;
+                    }
                 }
             } else {
                 sum = -1;
