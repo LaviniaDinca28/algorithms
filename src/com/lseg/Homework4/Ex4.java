@@ -2,7 +2,7 @@ package com.lseg.Homework4;
 
 public class Ex4 {
     public static void main(String[] args) {
-        System.out.println(canPack(1,0,5));
+        System.out.println(canPack(1,5,9));
     }
 
     static boolean canPack(int bigCount, int smallCount, int goal){
