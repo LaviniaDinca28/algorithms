@@ -4,25 +4,36 @@ public class Ex1 {
     public static void main(String[] args) {
 
         System.out.println(rangeSum(2,50,2));
+        //System.out.println(isDivisible(0,10));
 
     }
 
     private static boolean isDivisible(int number, int divisor) {
+        boolean result = false;
         if (number > 0) {
             if (number % divisor == 0) {
-                return true;
+                result = true;
             } else {
-                return false;
+                result = false;
             }
         } else {
-            return false;
+            result = false;
         }
+        return result;
     }
 
     static int rangeSum(int start, int end, int divisor){
         int sum = 0;
-        if(isDivisible(58, 2) == true){
-            sum++;
+        if(start !=0 && end !=0){
+            if(start < end) {
+                if (isDivisible(58, 2) == true) {
+                   // sum = sum + number;
+                }
+            } else {
+                sum = -1;
+            }
+        } else {
+            sum = -1;
         }
         return sum;
     }
