@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class ForHomework {
     public static void main(String[] args) {
 
+
+
         //Ex1
         int[][] array = new int[10][10];
 
