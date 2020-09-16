@@ -2,10 +2,10 @@ package com.lseg.Homework4;
 
 public class Ex4 {
     public static void main(String[] args) {
-        System.out.println(canPack(1,5,9));
+        System.out.println(canPack(1, 5, 9));
     }
 
-    static boolean canPack(int bigCount, int smallCount, int goal){
+    static boolean canPack(int bigCount, int smallCount, int goal) {
         int bigCountKilos = bigCount * 5;
         int smallCountKilos = smallCount;
 
