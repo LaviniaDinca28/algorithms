@@ -5,9 +5,11 @@ public class Wall {
     private double width;
     private double height;
 
+    //constructor1
     public Wall(){
     }
 
+    //constructor2
     public Wall(double width, double height){
         if(width > 0 && height < 0){
             this.width = width;

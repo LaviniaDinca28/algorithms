@@ -4,10 +4,15 @@ public class Point {
     private int x;
     private int y;
 
+    //constructor1
     public Point(){
     }
 
+    //constructor2
     public Point(int x, int y){
-        if()
+        this.x = x;
+        this.y = y;
     }
+
+
 }
