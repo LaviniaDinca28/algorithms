@@ -14,5 +14,32 @@ public class Point {
         this.y = y;
     }
 
+    public void setX(int x){
+        this.x = x;
+    }
+
+    public int getX(){ return x;}
+
+    public void setY(int y){
+        this.y = y;
+    }
+
+    public int getY(){ return y;}
+
+    public double distance(){
+        int d1 = this.x;
+        int d2 = this.y;
+
+        return Math.sqrt(d1 * d1 + d2 * d2);
+    }
+
+    public double distance(Point another){
+        int d1 = this.x - another.x;
+        int d2 = this.y - another.y;
+
+        return Math.sqrt(d1 * d1 + d2 * d2);
+    }
+
+
 
 }
