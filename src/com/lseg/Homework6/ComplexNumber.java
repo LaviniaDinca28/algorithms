@@ -12,9 +12,21 @@ public class ComplexNumber {
     }
 
     public double getReal(){return real;}
+
     public double getImaginary(){return imaginary;}
 
-    public double add(double n1, double n2){
-        temp.real = n1.real + n2.real;
+    public static ComplexNumber add(ComplexNumber c1, ComplexNumber c2) {
+        ComplexNumber temp = new ComplexNumber(0, 0);
+        temp.real = c1.real + c2.real;
+        temp.imaginary = c1.imaginary + c2.imaginary;
+        return temp;
+    }
+
+    public static ComplexNumber substract(ComplexNumber c1, ComplexNumber c2) {
+
+        ComplexNumber temp = new ComplexNumber(0, 0);
+        temp.real = c1.real - c2.real;
+        temp.imaginary = c1.imaginary - c2.imaginary;
+        return temp;
     }
 }
