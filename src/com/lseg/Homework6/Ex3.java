@@ -1,7 +1,7 @@
 package com.lseg.Homework6;
 
 public class Ex3 {
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         ComplexNumber one = new ComplexNumber(1.0, 1.0);
         ComplexNumber number = new ComplexNumber(2.5, -1.5);
         one.add(1,1);
@@ -13,5 +13,5 @@ public class Ex3 {
         number.subtract(one);
         System.out.println("number.real= " + number.getReal());
         System.out.println("number.imaginary= " + number.getImaginary());
-    }
+    }*/
 }
