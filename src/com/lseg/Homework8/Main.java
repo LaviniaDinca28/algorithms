@@ -8,5 +8,7 @@ public class Main {
         Dimensions dimensions = new Dimensions(20,2, "white");
 
         Room myRoom = new Room(bed, wardrobe, dimensions);
+
+        myRoom.getWardrobe();
     }
 }
