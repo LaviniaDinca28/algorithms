@@ -6,14 +6,12 @@ public class Bed {
     private double width;
     private String bedSheetsColor;
     private String type;
-    private boolean pillows;
 
-    public Bed(double length, double width, String fabric, String type, boolean pillows) {
+    public Bed(double length, double width, String bedSheetsColor, String type) {
         this.length = length;
         this.width = width;
-        this.bedSheetsColor = fabric;
+        this.bedSheetsColor = bedSheetsColor;
         this.type = type;
-        this.pillows = pillows;
     }
 
     public double getLength() {
@@ -46,13 +44,5 @@ public class Bed {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public boolean isPillows() {
-        return pillows;
-    }
-
-    public void setPillows(boolean pillows) {
-        this.pillows = pillows;
     }
 }
