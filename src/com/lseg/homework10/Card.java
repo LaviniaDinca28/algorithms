@@ -1,20 +1,21 @@
 package com.lseg.homework10;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Card {
 
-    private Date expirationDate;
+    private LocalDate expirationDate;
     private String ownerName;
     private int cardNumber;
 
-    public Card(Date expirationDate, String ownerName, int cardNumber) {
+    public Card(LocalDate expirationDate, String ownerName, int cardNumber) {
         this.expirationDate = expirationDate;
         this.ownerName = ownerName;
         this.cardNumber = cardNumber;
     }
 
-    public Date getExpirationDate() {
+    public LocalDate getExpirationDate() {
         return expirationDate;
     }
 
