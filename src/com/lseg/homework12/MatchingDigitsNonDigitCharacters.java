@@ -1,22 +1,20 @@
 package com.lseg.homework12;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-public class MatchingSpecificStrings {
+public class MatchingDigitsNonDigitCharacters {
 
     public static void main(String[] args) {
 
         Regex_Test tester = new Regex_Test();
-        tester.checker("hackerrank");
+        tester.checker("\\d\\d\\D\\d\\d\\D\\d\\d\\d\\d"); // Use \\ instead of using \
 
     }
 }
 
-class Regex_Test {
+class Regex_Test2 {
 
     public void checker(String Regex_Pattern){
 
@@ -24,11 +22,7 @@ class Regex_Test {
         String Test_String = Input.nextLine();
         Pattern p = Pattern.compile(Regex_Pattern);
         Matcher m = p.matcher(Test_String);
-        int Count = 0;
-        while(m.find()){
-            Count += 1;
-        }
-        System.out.format("Number of matches : %d",Count);
+        System.out.println(m.find());
     }
 
 }
